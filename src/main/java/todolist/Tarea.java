@@ -6,7 +6,7 @@ public class Tarea {
 
     public Tarea(String descripcion) {
         if (descripcion == null || descripcion.isBlank()) {
-            throw new IllegalArgumentException("La descripción no puede estar vacía");
+            throw new IllegalArgumentException("La descripción no puede estar vacíaaa");
         }
         this.descripcion = descripcion;
     }

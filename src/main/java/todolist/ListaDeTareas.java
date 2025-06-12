@@ -21,7 +21,7 @@ public class ListaDeTareas {
 
     public void completarTarea(int indice) {
         if (indice < 0 || indice >= tareas.size()) {
-            throw new IndexOutOfBoundsException("Índice inválido");
+            throw new IndexOutOfBoundsException("Índice inválidosss");
         }
         tareas.get(indice).marcarComoCompletada();
     }
