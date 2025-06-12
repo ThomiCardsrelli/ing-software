@@ -13,5 +13,6 @@ public class Tarea {
 
     public String getDescripcion() { return descripcion; }
     public boolean estaCompletada() { return completada; }
-    public void marcarComoCompletada() { completada = true; }
+    public void marcarComoCompletada() {
+        completada = true; }
 }

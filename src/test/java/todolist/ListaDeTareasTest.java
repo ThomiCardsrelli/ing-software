@@ -24,7 +24,6 @@ class ListaDeTareasTest {
         ListaDeTareas lista = new ListaDeTareas(null);
         lista.agregarTarea("Leer libro");
         lista.completarTarea(0);
-
         assertTrue(lista.obtenerTareas().get(0).estaCompletada());
     }
 
@@ -32,6 +31,16 @@ class ListaDeTareasTest {
     void testCompletarTareaConIndiceInvalido() {
         ListaDeTareas lista = new ListaDeTareas(null);
         assertThrows(IndexOutOfBoundsException.class, () -> lista.completarTarea(3));
+    }
+
+    @Test
+    void testCompletarTareaIndiceNegativo() {
+        ListaDeTareas lista = new ListaDeTareas(null);
+        lista.agregarTarea("Leer libro");
+
+        assertThrows(IndexOutOfBoundsException.class, () -> {
+            lista.completarTarea(-1);
+        });
     }
 
     @Test
